@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <app-header (toggleMenuSidebar)="toggleMenuSidebar()" (toggleControlSidebar)="toggleControlSidebar()"></app-header>
+    <app-menu-sidebar (mainSidebarHeight)="mainSidebarHeight($event)"></app-menu-sidebar>
+    <div #contentWrapper class="content-wrapper">
+        <router-outlet></router-outlet>
+      </div>
+    <app-control-sidebar 
+    (noNavbar) = "noNavbar($event)"
+    (smallText) = "smallText($event)"
+    (sideNavStyle)="sideNavStyle($event)"
+    (navVarientClick) = "navVarientClick($event)"
+    (accentColorClick) = "accentColorClick($event)"
+    (sidebarVarientClick)="sidebarVarientClick($event)"
+    (brandlogoVarientClick)="brandlogoVarientClick($event)"
+    (reset)="reset()"
+    ></app-control-sidebar>  
+    <app-footer></app-footer>    
+    <!--<aside class="control-sidebar control-sidebar-dark"></aside>
+    <div id="sidebar-overlay" (click)="toggleMenuSidebar()"></div>-->
+
+</div>

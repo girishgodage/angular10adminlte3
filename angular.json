@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css"              
             ],
             "scripts": []
           },
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ang-admin-app"
+    }
+  },
+  "defaultProject": "ang-admin-app",
+  "cli": {
+    "analytics": false
+  }
 }

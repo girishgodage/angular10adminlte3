@@ -1,0 +1,122 @@
+<aside class="control-sidebar control-sidebar-dark">
+    <div class="p-3">
+        <h5>Customize AdminLTE</h5>
+        <hr class="mb-2">
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onNoNavbar($event)" ><span>No Navbar border</span></div>
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onSmallText($event)"><span>small text</span></div>      
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onSideNavStyle($event,'nav-flat')"><span>Sidebar nav flat style</span></div>
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onSideNavStyle($event,'nav-legacy')"><span>Sidebar nav legacy style</span></div>
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onSideNavStyle($event,'nav-compact')"><span>Sidebar nav compact</span></div>
+          <div class="mb-1"><input type="checkbox" value="1" class="mr-1" (change)="onSideNavStyle($event,'nav-child-indent')"><span>Sidebar nav child indent</span></div>
+          <!--<div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Main Sidebar disable hover/focus auto expand</span></div>-->
+          
+          <h6>Navbar Variants</h6>
+          <div class="d-flex">
+             <div class="d-flex flex-wrap mb-3">
+                <div class="bg-primary elevation-2" (click)="onClick('navbar-primary','navbar-dark')" ></div>
+                <div class="bg-secondary elevation-2" (click)="onClick('navbar-secondary','navbar-dark')"></div>
+                <div class="bg-info elevation-2" (click)="onClick('navbar-info','navbar-dark')"></div>
+                <div class="bg-success elevation-2" (click)="onClick('navbar-success','navbar-dark')"></div>
+                <div class="bg-danger elevation-2" (click)="onClick('navbar-danger','navbar-dark')"></div>
+                <div class="bg-indigo elevation-2" (click)="onClick('navbar-indigo','navbar-dark')"></div>
+                <div class="bg-purple elevation-2" (click)="onClick('navbar-indigo','navbar-dark')"></div>
+                <div class="bg-pink elevation-2" (click)="onClick('navbar-pink','navbar-dark')"></div>
+                <div class="bg-navy elevation-2" (click)="onClick('navbar-navy','navbar-dark')"></div>
+                <div class="bg-lightblue elevation-2" (click)="onClick('navbar-lightblue','navbar-dark')"></div>
+                <div class="bg-teal elevation-2" (click)="onClick('navbar-teal','navbar-dark')"></div>
+                <div class="bg-cyan elevation-2" (click)="onClick('navbar-cyan','navbar-dark')"></div>
+                <div class="bg-dark elevation-2" (click)="onClick('navbar-dark','navbar-dark')"></div>
+                <div class="bg-gray-dark elevation-2" (click)="onClick('navbar-gray-dark','navbar-dark')"></div>
+                <div class="bg-gray elevation-2" (click)="onClick('navbar-gray','navbar-dark')"></div>
+                <div class="bg-light elevation-2" (click)="onClick('navbar-light','navbar-light')"></div>
+                <div class="bg-warning elevation-2" (click)="onClick('navbar-warning','navbar-light')"></div>
+                <div class="bg-white elevation-2" (click)="onClick('navbar-white','navbar-light')"></div>
+                <div class="bg-orange elevation-2" (click)="onClick('navbar-orange','navbar-light')"></div>
+             </div>             
+          </div>
+          <h6>Accent Color Variants</h6>
+          <div class="d-flex"></div>
+          <div class="d-flex flex-wrap mb-3">
+             <div class="bg-primary elevation-2" (click)="onAccentColorClick('accent-primary')"></div>
+             <div class="bg-warning elevation-2" (click)="onAccentColorClick('accent-warning')"></div>
+             <div class="bg-info elevation-2" (click)="onAccentColorClick('accent-info')"></div>
+             <div class="bg-danger elevation-2" (click)="onAccentColorClick('accent-danger')"></div>
+             <div class="bg-success elevation-2" (click)="onAccentColorClick('accent-success')"></div>
+             <div class="bg-indigo elevation-2" (click)="onAccentColorClick('accent-indigo')"></div>
+             <div class="bg-lightblue elevation-2" (click)="onAccentColorClick('accent-lightblue')"></div>
+             <div class="bg-navy elevation-2" (click)="onAccentColorClick('accent-navy')"></div>
+             <div class="bg-purple elevation-2" (click)="onAccentColorClick('accent-purple')"></div>
+             <div class="bg-fuchsia elevation-2" (click)="onAccentColorClick('accent-fuchsia')"></div>
+             <div class="bg-pink elevation-2" (click)="onAccentColorClick('accent-pink')"></div>
+             <div class="bg-maroon elevation-2" (click)="onAccentColorClick('accent-marron')"></div>
+             <div class="bg-orange elevation-2" (click)="onAccentColorClick('accent-orange')"></div>
+             <div class="bg-lime elevation-2" (click)="onAccentColorClick('accent-lime')"></div>
+             <div class="bg-teal elevation-2" (click)="onAccentColorClick('accent-teal')"></div>
+             <div class="bg-olive elevation-2" (click)="onAccentColorClick('accent-olive')"></div>
+          </div>
+          <h6>Dark Sidebar Variants</h6>
+          <div class="d-flex"></div>
+          <div class="d-flex flex-wrap mb-3">
+             <div class="bg-primary elevation-2" (click)="onSidebarVarientClick('sidebar-dark-primary')"></div>
+             <div class="bg-warning elevation-2" (click)="onSidebarVarientClick('sidebar-dark-warning')"></div>
+             <div class="bg-info elevation-2" (click)="onSidebarVarientClick('sidebar-dark-info')"></div>
+             <div class="bg-danger elevation-2" (click)="onSidebarVarientClick('sidebar-dark-danger')"></div>
+             <div class="bg-success elevation-2" (click)="onSidebarVarientClick('sidebar-dark-success')"></div>
+             <div class="bg-indigo elevation-2" (click)="onSidebarVarientClick('sidebar-dark-indigo')"></div>
+             <div class="bg-lightblue elevation-2" (click)="onSidebarVarientClick('sidebar-dark-lightblue')"></div>
+             <div class="bg-navy elevation-2" (click)="onSidebarVarientClick('sidebar-dark-navy')"></div>
+             <div class="bg-purple elevation-2" (click)="onSidebarVarientClick('sidebar-dark-purple')"></div>
+             <div class="bg-fuchsia elevation-2" (click)="onSidebarVarientClick('sidebar-dark-fuchsia')"></div>
+             <div class="bg-pink elevation-2" (click)="onSidebarVarientClick('sidebar-dark-pink')"></div>
+             <div class="bg-maroon elevation-2" (click)="onSidebarVarientClick('sidebar-dark-maroon')"></div>
+             <div class="bg-orange elevation-2" (click)="onSidebarVarientClick('sidebar-dark-orange')"></div>
+             <div class="bg-lime elevation-2" (click)="onSidebarVarientClick('sidebar-dark-lime')"></div>
+             <div class="bg-teal elevation-2" (click)="onSidebarVarientClick('sidebar-dark-teal')"></div>
+             <div class="bg-olive elevation-2" (click)="onSidebarVarientClick('sidebar-dark-olive')"></div>
+          </div>
+          <h6>Light Sidebar Variants</h6>
+          <div class="d-flex"></div>
+          <div class="d-flex flex-wrap mb-3">
+             <div class="bg-primary elevation-2" (click)="onSidebarVarientClick('sidebar-light-primary')"></div>
+             <div class="bg-warning elevation-2" (click)="onSidebarVarientClick('sidebar-light-warning')"></div>
+             <div class="bg-info elevation-2" (click)="onSidebarVarientClick('sidebar-light-info')"></div>
+             <div class="bg-danger elevation-2" (click)="onSidebarVarientClick('sidebar-light-danger')"></div>
+             <div class="bg-success elevation-2" (click)="onSidebarVarientClick('sidebar-light-success')"></div>
+             <div class="bg-indigo elevation-2" (click)="onSidebarVarientClick('sidebar-light-indigo')"></div>
+             <div class="bg-lightblue elevation-2" (click)="onSidebarVarientClick('sidebar-light-lightblue')"></div>
+             <div class="bg-navy elevation-2" (click)="onSidebarVarientClick('sidebar-light-navy')"></div>
+             <div class="bg-purple elevation-2" (click)="onSidebarVarientClick('sidebar-light-purple')"></div>
+             <div class="bg-fuchsia elevation-2" (click)="onSidebarVarientClick('sidebar-light-fuchsia')"></div>
+             <div class="bg-pink elevation-2" (click)="onSidebarVarientClick('sidebar-light-pink')"></div>
+             <div class="bg-maroon elevation-2" (click)="onSidebarVarientClick('sidebar-light-maroon')"></div>
+             <div class="bg-orange elevation-2" (click)="onSidebarVarientClick('sidebar-light-orange')"></div>
+             <div class="bg-lime elevation-2" (click)="onSidebarVarientClick('sidebar-light-lime')"></div>
+             <div class="bg-teal elevation-2" (click)="onSidebarVarientClick('sidebar-light-teal')"></div>
+             <div class="bg-olive elevation-2" (click)="onSidebarVarientClick('sidebar-light-olive')"></div>
+          </div>
+          <h6>Brand Logo Variants</h6>
+          <div class="d-flex"></div>
+          <div class="d-flex flex-wrap mb-3">
+             <div class="bg-primary elevation-2" (click)="onBrandlogoVarientClick('navbar-primary')"></div>
+             <div class="bg-secondary elevation-2" (click)="onBrandlogoVarientClick('navbar-secondary')"></div>
+             <div class="bg-info elevation-2" (click)="onBrandlogoVarientClick('navbar-info')"></div>
+             <div class="bg-success elevation-2" (click)="onBrandlogoVarientClick('navbar-success')"></div>
+             <div class="bg-danger elevation-2" (click)="onBrandlogoVarientClick('navbar-danger')"></div>
+             <div class="bg-indigo elevation-2" (click)="onBrandlogoVarientClick('navbar-indigo')"></div>
+             <div class="bg-purple elevation-2" (click)="onBrandlogoVarientClick('navbar-purple')"></div>
+             <div class="bg-pink elevation-2" (click)="onBrandlogoVarientClick('navbar-pink')"></div>
+             <div class="bg-navy elevation-2" (click)="onBrandlogoVarientClick('navbar-navy')"></div>
+             <div class="bg-lightblue elevation-2"(click)="onBrandlogoVarientClick('navbar-lightblue')"></div>
+             <div class="bg-teal elevation-2" (click)="onBrandlogoVarientClick('navbar-teal')"></div>
+             <div class="bg-cyan elevation-2" (click)="onBrandlogoVarientClick('navbar-cyan')"></div>
+             <div class="bg-dark elevation-2" (click)="onBrandlogoVarientClick('navbar-dark')"></div>
+             <div class="bg-gray-dark elevation-2" (click)="onBrandlogoVarientClick('navbar-gray-dark')"></div>
+             <div class="bg-gray elevation-2" (click)="onBrandlogoVarientClick('navbar-gray')"></div>
+             <div class="bg-light elevation-2" (click)="onBrandlogoVarientClick('navbar-light')"></div>
+             <div class="bg-warning elevation-2" (click)="onBrandlogoVarientClick('navbar-warning')"></div>
+             <div class="bg-white elevation-2" (click)="onBrandlogoVarientClick('navbar-white')"></div>
+             <div class="bg-orange elevation-2" (click)="onBrandlogoVarientClick('navbar-orange')"></div>
+             <a href="javascript:void(0)" (click)="onReset()">clear</a>
+          </div>
+      </div>
+</aside>
